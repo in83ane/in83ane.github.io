@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #fcb4bc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+  }
+  h5 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+  }
+  
+  h1:nth-child(1) {
+    font-weight: 300;
+  }
+  
+  h1:nth-child(2) {
+    font-weight: 400;
+  }
+  
+  h1:nth-child(3) {
+    font-weight: 300;
+  }
+  
+  .scroll-text {
+    position: absolute;
+    bottom: 20px;
+    font-size: 16px;
+    animation: scrollUp 5s infinite;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scrollUp {
+    0% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+  .paper-content {
+    color: black;  /* กำหนดสีข้อความเป็นสีดำ */
+    font-size: 16px;  /* ปรับขนาดตัวอักษรตามต้องการ */
+    line-height: 1.5;  /* ปรับความสูงระหว่างบรรทัด */
+  }
+  .paper-content p {
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+    line-height: 1.8;
+    white-space: pre-wrap; /* รองรับ Enter */
+  }
+  .letter-notice {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
